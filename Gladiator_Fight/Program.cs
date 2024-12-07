@@ -37,7 +37,7 @@ class Program
 
         }
 
-        if(playerHealth1 > 0 || playerHealth2 < 0) Console.WriteLine($"Гладиатор 1 победил!\nОставщееся здоровье: {playerHealth1}.");
+        if(playerHealth1 >= 0 || playerHealth2 <= 0) Console.WriteLine($"Гладиатор 1 победил!\nОставщееся здоровье: {playerHealth1}.");
 
         else if (playerHealth1 <= 0 && playerHealth2 >= 0) Console.WriteLine($"Гладиатор 2 победил!\nОставщееся здоровье: {playerHealth2}.");
         
