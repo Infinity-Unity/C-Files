@@ -29,17 +29,17 @@ class Program
 
             
             playerHealth1 -= playerDamage2 - ((playerArmour1 / 100) * playerDamage2);
-            if (playerHealth1 < 0) break;
+            if (playerHealth1 <= 0) break;
             Console.WriteLine($"Гладиатор 2 нанес урон {playerDamage1 - (playerArmour1 / 100) * playerDamage2} Гладиатору 1.Остаток здоровья Гладиатор 1: {playerHealth1}.");
             playerHealth2 -= playerDamage1 - ((playerArmour2 / 100) * playerDamage1);
-            if (playerHealth2 < 0) break;
+            if (playerHealth2 <= 0) break;
             Console.WriteLine($"Гладиатор 1 нанес урон {playerDamage1 - (playerArmour2 / 100) * playerDamage1} Гладиатору 2.Остаток здоровья Гладиатор 2: {playerHealth2}.");
 
         }
 
         if(playerHealth1 > 0 || playerHealth2 < 0) Console.WriteLine($"Гладиатор 1 победил!\nОставщееся здоровье: {playerHealth1}.");
 
-        else if (playerHealth1 < 0 && playerHealth2 > 0) Console.WriteLine($"Гладиатор 2 победил!\nОставщееся здоровье: {playerHealth2}.");
+        else if (playerHealth1 <= 0 && playerHealth2 >= 0) Console.WriteLine($"Гладиатор 2 победил!\nОставщееся здоровье: {playerHealth2}.");
         
         Console.ReadKey();
 
