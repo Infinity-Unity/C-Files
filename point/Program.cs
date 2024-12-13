@@ -14,8 +14,8 @@ class Program
         ConsoleColor std = Console.ForegroundColor;
         int userPositionX = 1;
         int userPositionY = 1;
-        SoundPlayer player = new SoundPlayer(@"C:\Users\Abdul\source\repos\ConsoleApp1\ConsoleApp1\flabby-burd.wav");
-        SoundPlayer win = new SoundPlayer(@"C:\Users\Abdul\source\repos\ConsoleApp1\ConsoleApp1\win.wav");
+        SoundPlayer player = new SoundPlayer(@"C:\Your way\flabby-burd.wav");
+        SoundPlayer win = new SoundPlayer(@"C:\Your way\win.wav");
         Random rand = new Random();
 
         char[] bag = new char[1];
